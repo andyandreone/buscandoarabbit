@@ -20,6 +20,8 @@ var watchID = navigator.geolocation.watchPosition(function(position) {
 
 
     if(lat>latMaxAndy&&lat<latMinAndy){
+        let textoPista = document.getElementById("textPista")
+        textoPista.innerText = "Pista desbloqueada! Ya la puedes ver!"
         button.disabled = false
     }
     
