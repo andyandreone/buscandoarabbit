@@ -19,7 +19,7 @@ var watchID = navigator.geolocation.watchPosition(function(position) {
     let longMaxAndy = -58.59620
 
 
-    if(lat>latMaxAndy&&lat<latMinAndy){
+    if((lat>latMaxZeba&&lat<latMinZeba)&&(long>longMaxZeba&&long<longMinZeba)){
         let textoPista = document.getElementById("textPista")
         textoPista.innerText = "Pista desbloqueada! Ya la puedes ver!"
         button.disabled = false
