@@ -34,3 +34,5 @@ var watchID = navigator.geolocation.watchPosition(function(position) {
   function mostrar(){
         alert("PUTO EL QUE LEE")
   }
+
+ 
