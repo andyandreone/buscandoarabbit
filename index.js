@@ -11,10 +11,10 @@ var watchID = navigator.geolocation.watchPosition(function(position) {
     longDom.innerHTML = `<p>Longitud: ${long}</p>`
     presDom.innerHTML = `<p>Precision: ${precision} metros</p>`
     let button = document.getElementById("btn")
-    let latMinZeba = -34.68000
-    let latMaxZeba = -34-68999
-    let longMinZeba = -58.61000
-    let longMaxZeba = -58.61999
+    let latMinZeba = -34.68270
+    let latMaxZeba = -34-68500
+    let longMinZeba = -58.61555
+    let longMaxZeba = -58.61852
 
     let latMinAndy = -34.53740
     let latMaxAndy = -34.53750
