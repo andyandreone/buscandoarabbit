@@ -10,19 +10,6 @@ var watchID = navigator.geolocation.watchPosition(function(position) {
     longDom.innerHTML = `<p>Longitud: ${long}</p>`
     presDom.innerHTML = `<p>Precision: ${precision} metros</p>`
 
-
-
-    
-    // let latMinZeba = -34.68270
-    // let latMaxZeba = -34-68500
-    // let longMinZeba = -58.61555
-    // let longMaxZeba = -58.61852
-
-    // let latMinAndy = -34.53740
-    // let latMaxAndy = -34.53750
-    // let longMinAndy = -58.59590
-    // let longMaxAndy = -58.59620
-
     let dif = 0.00020
     let lat1 = -34.62761
     let long1 = -58.41788
@@ -46,13 +33,6 @@ var watchID = navigator.geolocation.watchPosition(function(position) {
     let long7 = -58.54450
  
     
-   
-
-    // if((lat>latMaxZeba&&lat<latMinZeba)&&(long>longMaxZeba&&long<longMinZeba)){
-    //     let textoPista = document.getElementById("textPista1")
-    //     textoPista.innerText = "DESBLOQUEADA!"
-    //     button.disabled = false
-    // }
     if((lat>lat1-dif&&lat<lat1+dif)&&(long>long1-dif)&&(long<long1+dif)){
         let textoPista = document.getElementById("textPista1")
         textoPista.innerText = "DESBLOQUEADA!"
@@ -89,14 +69,12 @@ var watchID = navigator.geolocation.watchPosition(function(position) {
         btn5.disabled = false
     }
 
-
     if((lat>lat6-dif&&lat<lat6+dif)&&(long>long6-dif)&&(long<long6+dif)){
         let textoPista = document.getElementById("textPista6")
         textoPista.innerText = "DESBLOQUEADA!"
         let btn6 = document.getElementById("btn6")
         btn6.disabled = false
     }
-
 
     if((lat>lat7-dif&&lat<lat7+dif)&&(long>long7-dif)&&(long<long7+dif)){
         let textoPista = document.getElementById("textPista7")
