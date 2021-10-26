@@ -10,7 +10,8 @@ var watchID = navigator.geolocation.watchPosition(function(position) {
     longDom.innerHTML = `<p>Longitud: ${long}</p>`
     presDom.innerHTML = `<p>Precision: ${precision} metros</p>`
 
-    let dif = 0.00020
+    let dif = 0.00045
+
     let lat1 = -34.62761
     let long1 = -58.41788
 
